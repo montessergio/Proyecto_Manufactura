@@ -86,14 +86,40 @@ Respuesta: Porque no se está utilizando el torque de apriete especificado ni se
 
 Respuesta: Falta de un procedimiento estandarizado de ajuste y ausencia de herramientas de torque calibradas en la estación.
 
-3. ✨ Mejorar (Lluvia de Ideas)
-Tras una sesión de brainstorming, el equipo propone las siguientes soluciones:
+3. ✨ Mejorar (Lluvia de Ideas por Roles)
+Tras una sesión de brainstorming multidisciplinaria, el equipo Ingenieros chiquitos propone las siguientes soluciones integrales para eliminar el defecto de "Dimensión fuera de especificación" en la Máquina M2:
 
-Estandarización: Crear una Ayuda Visual (SOP) con los valores de torque específicos para la M2.
+👔 Desde la Gerencia de Producción (Omar Campos):
 
-Kit de Herramientas: Proveer llaves dinamométricas (torquímetros) fijas en la estación de trabajo.
 
-Material: Implementar el uso de arandelas de presión y sellador de roscas de alta temperatura.
+Priorización de Inversión: Autorizar la compra inmediata de los kits de herramientas para evitar que el costo por desperdicio (scrap) siga afectando el cumplimiento de entregas.
+
+
+Ajuste de KPIs: Integrar el cumplimiento de los nuevos estándares de torque en los indicadores de rendimiento del turno.
+
+📊 Desde el Análisis de Calidad (Sergio Montes / Mónica Godinez):
+
+
+Validación de Materiales: Proponer y validar estadísticamente que el uso de arandelas de presión y sellador de roscas de alta temperatura reduzca la variabilidad de las dimensiones a largo plazo.
+
+
+Muestreo Dirigido: Establecer un plan de inspección reforzado durante los primeros 15 días tras la implementación de las mejoras.
+
+⚙️ Desde la Ingeniería de Procesos (Karen Pérez):
+
+
+Estandarización Técnica (SOP): Diseñar la Ayuda Visual (SOP) con los valores de torque exactos, utilizando un lenguaje técnico claro y diagramas de posición para el eje de la M2.
+
+
+Poka-Yoke de Herramientas: Implementar un Kit de Herramientas con llaves dinamométricas (torquímetros) pre-ajustadas al valor requerido, evitando que el operador use una fuerza incorrecta de forma manual.
+
+📋 Desde la Supervisión de Turno (Anahi):
+
+
+Factibilidad Operativa: Asegurar que los torquímetros estén anclados o fijos en la estación para que el operador no pierda tiempo buscándolos (aplicación de orden y limpieza).
+
+
+Capacitación en Piso: Entrenar a los operadores en el uso correcto de los nuevos materiales y la lectura de la ayuda visual para garantizar una implementación realista y sostenible.
 
 4. 🛠️ Controlar
 Para asegurar que la Máquina M2 se mantenga en los estándares, utilizaremos:
