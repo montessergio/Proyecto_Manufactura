@@ -51,3 +51,51 @@ Para abordar la variabilidad en la planta "Manufactura Global S.A." , es vital i
 🧪 Procesos: Traduce los datos en ingeniería aplicada y herramientas físicas concretas.
 
 ✅ Operación: Garantiza que la implementación sea realista para los operadores en todos los turnos.
+
+📉 SECCIÓN B: Aplicación de Seis Sigma (Metodología DMAIC)
+En esta sección utilizamos el ciclo de mejora para atacar la variabilidad de la planta.
+
+1. 🎯 Definir y Medir
+
+Métrica de Calidad Global: Calculamos el porcentaje total de unidades defectuosas de la planta (Suma de Defectos / Suma de Producción).
+
+
+Análisis de Pareto: Mediante el procesamiento en Python, identificamos que el Tipo de Defecto Principal es "Dimensión fuera de especificación". Este problema representa la prioridad #1 para el equipo TOPS debido a su alto impacto en el desperdicio de material.
+
+2. 🔍 Analizar: Caso Máquina M2
+Al filtrar los datos para la Máquina M2, observamos una recurrencia crítica del defecto de dimensiones. Para encontrar la causa raíz, aplicamos la técnica de los 5 Porqués:
++1
+
+¿Por qué las piezas de la M2 tienen dimensiones incorrectas?
+
+Respuesta: Porque el eje de corte pierde alineación durante la operación.
+
+¿Por qué pierde alineación el eje?
+
+Respuesta: Porque el soporte del rodamiento presenta una vibración excesiva.
+
+¿Por qué hay vibración excesiva?
+
+Respuesta: Porque los tornillos de fijación se aflojan con el calor del turno.
+
+¿Por qué se aflojan con el calor?
+
+Respuesta: Porque no se está utilizando el torque de apriete especificado ni sellador térmico.
+
+¿Por qué no se usa el torque correcto? (Causa Raíz)
+
+Respuesta: Falta de un procedimiento estandarizado de ajuste y ausencia de herramientas de torque calibradas en la estación.
+
+3. ✨ Mejorar (Lluvia de Ideas)
+Tras una sesión de brainstorming, el equipo propone las siguientes soluciones:
+
+Estandarización: Crear una Ayuda Visual (SOP) con los valores de torque específicos para la M2.
+
+Kit de Herramientas: Proveer llaves dinamométricas (torquímetros) fijas en la estación de trabajo.
+
+Material: Implementar el uso de arandelas de presión y sellador de roscas de alta temperatura.
+
+4. 🛠️ Controlar
+Para asegurar que la Máquina M2 se mantenga en los estándares, utilizaremos:
+
+Gráfico de Control (SPC): Un tablero visual donde el operador registre las dimensiones críticas cada hora. Si los puntos salen de los límites, la máquina se detiene automáticamente para ajuste.
