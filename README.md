@@ -16,30 +16,30 @@ Este proyecto realiza un análisis integral de los procesos de producción, cent
 * Se identificaron los defectos principales que afectan la línea de producción.
 * El análisis de tendencias permite prever picos de fallas en turnos específicos.
 
-🟢 SECCIÓN A: Formación del Equipo TOPS (Equipos Orientados a la Solución de Problemas) 
+## 🟢 SECCIÓN A: Formación del Equipo TOPS (Equipos Orientados a la Solución de Problemas) 
 
 
-Nombre del Equipo: 🛠️ Ingenieros chiquitos 
+Nombre del Equipo: 🛠️ **Ingenieros chiquitos** 
 
 
 👥 Estructura del Equipo: Roles y Responsabilidades 
 
 
-👔 Gerente de Producción (Omar Campos): Responsable de interpretar el impacto en el throughput y asegurar el cumplimiento de las metas de entrega. Su enfoque es priorizar las acciones de mejora que impacten la productividad.
+👔 Gerente de Producción (**Omar Campos**): Responsable de interpretar el impacto en el throughput y asegurar el cumplimiento de las metas de entrega. Su enfoque es priorizar las acciones de mejora que impacten la productividad.
 
 
-📊 Analista de Calidad (Sergio Montes / Mónica Godínez): Encargados de calcular las métricas de defectos utilizando el dataset de producción. Su función principal es ejecutar el Análisis de Pareto e identificar el defecto principal.
+📊 Analista de Calidad (**Sergio Montes / Mónica Godínez**): Encargados de calcular las métricas de defectos utilizando el dataset de producción. Su función principal es ejecutar el Análisis de Pareto e identificar el defecto principal.
 +2
 
 
-⚙️ Ingeniero de Procesos (Karen Pérez): Responsable del diseño de soluciones técnicas y mejoras de flujo de trabajo. Su tarea es proponer mecanismos de ingeniería aplicada como Poka-Yoke.
+⚙️ Ingeniero de Procesos (**Karen Pérez**): Responsable del diseño de soluciones técnicas y mejoras de flujo de trabajo. Su tarea es proponer mecanismos de ingeniería aplicada como Poka-Yoke.
 +1
 
 
-📋 Supervisor de Turno (Anahi): Encargada de validar que las propuestas sean operativamente viables en el piso de producción. Documenta las condiciones reales de operación para asegurar el éxito de la implementación.
+📋 Supervisor de Turno (**Anahi Valdez**): Encargada de validar que las propuestas sean operativamente viables en el piso de producción. Documenta las condiciones reales de operación para asegurar el éxito de la implementación.
 
 
-🤝 Justificación de Multidisciplinariedad 
+## 🤝 Justificación de Multidisciplinariedad 
 
 Para abordar la variabilidad en la planta "Manufactura Global S.A." , es vital integrar estas cuatro perspectivas:
 +1
@@ -52,41 +52,41 @@ Para abordar la variabilidad en la planta "Manufactura Global S.A." , es vital i
 
 ✅ Operación: Garantiza que la implementación sea realista para los operadores en todos los turnos.
 
-📉 SECCIÓN B: Aplicación de Seis Sigma (Metodología DMAIC)
+## 📉 SECCIÓN B: Aplicación de Seis Sigma (Metodología DMAIC)
 En esta sección utilizamos el ciclo de mejora para atacar la variabilidad de la planta.
 
-1. 🎯 Definir y Medir
+1. 🎯 **Definir y Medir**
 
 Métrica de Calidad Global: Calculamos el porcentaje total de unidades defectuosas de la planta (Suma de Defectos / Suma de Producción).
 
 
 Análisis de Pareto: Mediante el procesamiento en Python, identificamos que el Tipo de Defecto Principal es "Dimensión fuera de especificación". Este problema representa la prioridad #1 para el equipo TOPS debido a su alto impacto en el desperdicio de material.
 
-2. 🔍 Analizar: Caso Máquina M2
+2. 🔍 **Analizar: Caso Máquina M2**
 Al filtrar los datos para la Máquina M2, observamos una recurrencia crítica del defecto de dimensiones. Para encontrar la causa raíz, aplicamos la técnica de los 5 Porqués:
 +1
 
-¿Por qué las piezas de la M2 tienen dimensiones incorrectas?
+**¿Por qué las piezas de la M2 tienen dimensiones incorrectas?**
 
 Respuesta: Porque el eje de corte pierde alineación durante la operación.
 
-¿Por qué pierde alineación el eje?
+**¿Por qué pierde alineación el eje?**
 
 Respuesta: Porque el soporte del rodamiento presenta una vibración excesiva.
 
-¿Por qué hay vibración excesiva?
+**¿Por qué hay vibración excesiva?**
 
 Respuesta: Porque los tornillos de fijación se aflojan con el calor del turno.
 
-¿Por qué se aflojan con el calor?
+**¿Por qué se aflojan con el calor?**
 
 Respuesta: Porque no se está utilizando el torque de apriete especificado ni sellador térmico.
 
-¿Por qué no se usa el torque correcto? (Causa Raíz)
+**¿Por qué no se usa el torque correcto? (Causa Raíz)**
 
 Respuesta: Falta de un procedimiento estandarizado de ajuste y ausencia de herramientas de torque calibradas en la estación.
 
-3. ✨ Mejorar (Lluvia de Ideas por Roles)
+## 3. ✨ Mejorar (Lluvia de Ideas por Roles)
 Tras una sesión de brainstorming multidisciplinaria, el equipo Ingenieros chiquitos propone las siguientes soluciones integrales para eliminar el defecto de "Dimensión fuera de especificación" en la Máquina M2:
 
 👔 Desde la Gerencia de Producción (Omar Campos):
@@ -113,15 +113,58 @@ Estandarización Técnica (SOP): Diseñar la Ayuda Visual (SOP) con los valores 
 
 Poka-Yoke de Herramientas: Implementar un Kit de Herramientas con llaves dinamométricas (torquímetros) pre-ajustadas al valor requerido, evitando que el operador use una fuerza incorrecta de forma manual.
 
-📋 Desde la Supervisión de Turno (Anahi):
+📋 Desde la Supervisión de Turno (Anahi Valdez):
 
 
-Factibilidad Operativa: Asegurar que los torquímetros estén anclados o fijos en la estación para que el operador no pierda tiempo buscándolos (aplicación de orden y limpieza).
+## Factibilidad Operativa: Asegurar que los torquímetros estén anclados o fijos en la estación para que el operador no pierda tiempo buscándolos (aplicación de orden y limpieza).
 
 
-Capacitación en Piso: Entrenar a los operadores en el uso correcto de los nuevos materiales y la lectura de la ayuda visual para garantizar una implementación realista y sostenible.
+## Capacitación en Piso: Entrenar a los operadores en el uso correcto de los nuevos materiales y la lectura de la ayuda visual para garantizar una implementación realista y sostenible.
 
-4. 🛠️ Controlar
+4. 🛠️ **Controlar**
 Para asegurar que la Máquina M2 se mantenga en los estándares, utilizaremos:
 
-Gráfico de Control (SPC): Un tablero visual donde el operador registre las dimensiones críticas cada hora. Si los puntos salen de los límites, la máquina se detiene automáticamente para ajuste.
+**Gráfico de Control (SPC)**: Un tablero visual donde el operador registre las dimensiones críticas cada hora. Si los puntos salen de los límites, la máquina se detiene automáticamente para ajuste.
+
+
+## 🚀 SECCIÓN C: Herramientas Lean Manufacturing
+En esta sección, aplicamos pilares de Lean Manufacturing para eliminar desperdicios y robustecer el proceso productivo de la planta.
+
+C.1. Mantenimiento Productivo Total (**TPM**): Enfoque en Mantenimiento Autónomo 🛠️
+Ante los paros registrados por "Rotura de Herramienta", el equipo propone implementar el Pilar de Mantenimiento Autónomo:
+
+
+**Inspección Diaria**: El operador realizará una limpieza y revisión visual de la herramienta al inicio de cada turno para detectar desgaste prematuro.
+
+
+**Lubricación Estandarizada**: Se establece un programa donde el operador aplica lubricante en puntos críticos para reducir la fricción que causa las roturas.
+
+
+**Detección Temprana**: Capacitar al operador para identificar sonidos o vibraciones anormales antes de que ocurra la falla catastrófica.
+
+## C.2. Las 5S: Estrategia para reducir el "Error del Operador" 📋
+Para mitigar los errores humanos detectados en el reporte, implementaremos las 5S en las estaciones de trabajo:
+
+
+**Seiri (Clasificar)**: Retirar cualquier herramienta que no pertenezca a la operación de la máquina M2.
+
+
+**Seiton (Ordenar)**: Utilizar tableros de sombra (shadow boards) para que cada herramienta (como el torquímetro) tenga un lugar único y marcado.
+
+
+**Seiso (Limpiar)**: Mantener el área libre de virutas o aceite que puedan provocar distracciones o errores de ajuste.
+
+
+**Seiketsu (Estandarizar)**: Colocar las Ayudas Visuales (SOP) diseñadas por el equipo en lugares visibles para consulta rápida.
+
+
+**Shitsuke (Disciplina)**: Realizar auditorías semanales por parte de la Supervisora de Turno (Anahi) para mantener el estándar.
+
+## C.3. Poka-Yoke: Mecanismo a prueba de errores 🛡️
+Para evitar que salgan piezas con dimensiones incorrectas, proponemos un mecanismo físico de tipo "paso/no paso" (Go/No-Go gage):
+
+
+**Diseño**: Un dispositivo de medición fija al final de la línea de la M2.
+
+
+**Funcionamiento**: La pieza debe pasar a través de una ranura calibrada con la dimensión exacta. Si la pieza está fuera de especificación, no encajará en el dispositivo, bloqueando físicamente su avance a la siguiente etapa de empaque.
