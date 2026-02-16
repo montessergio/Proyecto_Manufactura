@@ -28,7 +28,7 @@ Nombre del Equipo: 🛠️ Ingenieros chiquitos
 👔 Gerente de Producción (Omar Campos): Responsable de interpretar el impacto en el throughput y asegurar el cumplimiento de las metas de entrega. Su enfoque es priorizar las acciones de mejora que impacten la productividad.
 
 
-📊 Analista de Calidad (Sergio Montes / Mónica): Encargados de calcular las métricas de defectos utilizando el dataset de producción. Su función principal es ejecutar el Análisis de Pareto e identificar el defecto principal.
+📊 Analista de Calidad (Sergio Montes / Mónica Godínez): Encargados de calcular las métricas de defectos utilizando el dataset de producción. Su función principal es ejecutar el Análisis de Pareto e identificar el defecto principal.
 +2
 
 
