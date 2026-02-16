@@ -15,3 +15,30 @@ Este proyecto realiza un análisis integral de los procesos de producción, cent
 ## 💡 Insights Clave
 * Se identificaron los defectos principales que afectan la línea de producción.
 * El análisis de tendencias permite prever picos de fallas en turnos específicos.
+
+## Roles y Responsabilidades
+**Gerente de Producción**
+Omar campos
+*Interpretar impacto en throughput y cumplimiento.
+*Priorizar acciones de mejora.
+
+**Analista de Calidad**
+Sergio Montes/Monica 
+*Calcular métricas de defectos.
+*Ejecutar Pareto y validación estadística.
+
+**Ingeniero de Procesos**
+Karen Perez
+*Diseñar soluciones técnicas.
+*Proponer Poka-Yoke y mejoras de flujo.
+
+**Supervisor de Turno**
+Anahi
+*Validar viabilidad operativa.
+*Documentar condiciones reales de operación.
+
+## Justificación de multidisciplinariedad
+*Producción optimiza capacidad.
+*Calidad asegura estabilidad.
+*Procesos traduce datos en ingeniería aplicada.
+*Operación garantiza implementación realista.
