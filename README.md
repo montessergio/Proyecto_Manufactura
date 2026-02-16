@@ -168,3 +168,29 @@ Para evitar que salgan piezas con dimensiones incorrectas, proponemos un mecanis
 
 
 **Funcionamiento**: La pieza debe pasar a través de una ranura calibrada con la dimensión exacta. Si la pieza está fuera de especificación, no encajará en el dispositivo, bloqueando físicamente su avance a la siguiente etapa de empaque.
+
+
+## 🎓 SECCIÓN D: Herramientas Creativas (Seis Sombreros para Pensar)
+Para validar la solución propuesta (Poka-Yoke: Calibrador Paso/No-Paso), el equipo Ingenieros chiquitos aplicó la técnica de pensamiento paralelo. Todo el equipo analizó la misma solución bajo dos perspectivas críticas: los beneficios (Sombrero Amarillo) y los riesgos (Sombrero Negro).
+
+🟡 **D.1. Análisis desde el Sombrero Amarillo (Beneficios y Valor)**
+Bajo este sombrero, el equipo exploró por qué la implementación será un éxito y qué valor aporta a la planta.
+
+**Gerente de Producción (Omar Campos)**: "Desde mi perspectiva, el beneficio principal es la recuperación del throughput. Al filtrar las piezas malas en la M2, evitamos que lleguen a empaque, eliminando el costo de re-trabajo y multas por retrasos".
+
+**Analista de Calidad (Sergio Montes / Mónica)**: "Este sistema nos da una certeza del 100% en la segregación de producto conforme. Los datos de nuestros gráficos de control mostrarán una estabilidad que antes no teníamos".
+
+**Ingeniero de Procesos (Karen Pérez)**: "El mayor beneficio técnico es la simplicidad. Al ser un dispositivo físico, no depende de la interpretación del operador; la pieza entra o no entra, eliminando la ambigüedad en la medición".
+
+**Supervisor de Turno (Anahi)**: "Para el personal operativo, esto reduce el estrés y la fatiga visual. Es una herramienta rápida que permite mantener el ritmo de producción sin sacrificar la calidad".
+
+## ⚫ D.2. Análisis desde el Sombrero Negro (Riesgos y Cautela)
+Bajo este sombrero, el equipo se enfocó en los peligros, obstáculos y posibles fallas del sistema.
+
+**Gerente de Producción (Omar Campos)**: "Mi preocupación es el costo de fabricación de estos calibradores para todas las estaciones. Debemos asegurar que el retorno de inversión por ahorro de scrap sea visible en el primer mes".
+
+**Analista de Calidad (Sergio Montes / Mónica)**: "El riesgo crítico es la pérdida de calibración. Si el dispositivo se cae o se golpea, su dimensión interna podría cambiar, y estaríamos validando piezas erróneas sin saberlo".
+
+**Ingeniero de Procesos (Karen Pérez)**: "Identifico un riesgo de desgaste por fricción. El contacto constante metal-metal con las piezas de la M2 desgastará el calibrador. Si no hay un plan de endurecimiento del material, el Poka-Yoke fallará".
+
+**Supervisor de Turno (Anahi)**: "Existe el riesgo de resistencia al cambio. Si el operador siente que el calibrador 'lo detiene' para cumplir su cuota, podría intentar saltarse el paso o forzar la pieza, dañando tanto el producto como la herramienta".
