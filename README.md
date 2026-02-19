@@ -4,8 +4,8 @@ Este proyecto realiza un análisis integral de los procesos de producción, cent
 
 ## 🛠️ Herramientas Utilizadas
 * **Python (Pandas & Matplotlib):** Limpieza de datos y análisis estadístico inicial.
-* **Power BI:** Creación de un Dashboard interactivo con 4 vistas principales.
-* **Diagrama de Pareto:** Aplicado para identificar el 80% de los defectos.
+* **Power BI:** Creación de un Dashboard interacto.
+
 
 ## 📈 Contenido del Repositorio
 1.  **Analisis_Proyecto_Manufactura.ipynb:** Script con el procesamiento de datos.
@@ -89,7 +89,7 @@ Respuesta: Falta de un procedimiento estandarizado de ajuste y ausencia de herra
 ## 3. ✨ Mejorar (Lluvia de Ideas por Roles)
 Tras una sesión de brainstorming multidisciplinaria, el equipo Ingenieros chiquitos propone las siguientes soluciones integrales para eliminar el defecto de "Dimensión fuera de especificación" en la Máquina M2:
 
-👔 Desde la Gerencia de Producción (Omar Campos):
+**👔 Desde la Gerencia de Producción (Omar Campos):**
 
 
 Priorización de Inversión: Autorizar la compra inmediata de los kits de herramientas para evitar que el costo por desperdicio (scrap) siga afectando el cumplimiento de entregas.
@@ -97,7 +97,7 @@ Priorización de Inversión: Autorizar la compra inmediata de los kits de herram
 
 Ajuste de KPIs: Integrar el cumplimiento de los nuevos estándares de torque en los indicadores de rendimiento del turno.
 
-📊 Desde el Análisis de Calidad (Sergio Montes / Mónica Godinez):
+**📊 Desde el Análisis de Calidad (Sergio Montes / Mónica Godinez):**
 
 
 Validación de Materiales: Proponer y validar estadísticamente que el uso de arandelas de presión y sellador de roscas de alta temperatura reduzca la variabilidad de las dimensiones a largo plazo.
@@ -105,7 +105,7 @@ Validación de Materiales: Proponer y validar estadísticamente que el uso de ar
 
 Muestreo Dirigido: Establecer un plan de inspección reforzado durante los primeros 15 días tras la implementación de las mejoras.
 
-⚙️ Desde la Ingeniería de Procesos (Karen Pérez):
+**⚙️ Desde la Ingeniería de Procesos (Karen Pérez):**
 
 
 Estandarización Técnica (SOP): Diseñar la Ayuda Visual (SOP) con los valores de torque exactos, utilizando un lenguaje técnico claro y diagramas de posición para el eje de la M2.
@@ -113,13 +113,13 @@ Estandarización Técnica (SOP): Diseñar la Ayuda Visual (SOP) con los valores 
 
 Poka-Yoke de Herramientas: Implementar un Kit de Herramientas con llaves dinamométricas (torquímetros) pre-ajustadas al valor requerido, evitando que el operador use una fuerza incorrecta de forma manual.
 
-📋 Desde la Supervisión de Turno (Anahi Valdez):
+**📋 Desde la Supervisión de Turno (Anahi Valdez):**
 
 
-## Factibilidad Operativa: Asegurar que los torquímetros estén anclados o fijos en la estación para que el operador no pierda tiempo buscándolos (aplicación de orden y limpieza).
+Factibilidad Operativa: Asegurar que los torquímetros estén anclados o fijos en la estación para que el operador no pierda tiempo buscándolos (aplicación de orden y limpieza).
 
 
-## Capacitación en Piso: Entrenar a los operadores en el uso correcto de los nuevos materiales y la lectura de la ayuda visual para garantizar una implementación realista y sostenible.
+Capacitación en Piso: Entrenar a los operadores en el uso correcto de los nuevos materiales y la lectura de la ayuda visual para garantizar una implementación realista y sostenible.
 
 4. 🛠️ **Controlar**
 Para asegurar que la Máquina M2 se mantenga en los estándares, utilizaremos:
@@ -182,7 +182,7 @@ Bajo este sombrero, el equipo exploró por qué la implementación será un éxi
 
 **Ingeniero de Procesos (Karen Pérez)**: "El mayor beneficio técnico es la simplicidad. Al ser un dispositivo físico, no depende de la interpretación del operador; la pieza entra o no entra, eliminando la ambigüedad en la medición".
 
-**Supervisor de Turno (Anahi)**: "Para el personal operativo, esto reduce el estrés y la fatiga visual. Es una herramienta rápida que permite mantener el ritmo de producción sin sacrificar la calidad".
+**Supervisor de Turno (Anahi Valdez)**: "Para el personal operativo, esto reduce el estrés y la fatiga visual. Es una herramienta rápida que permite mantener el ritmo de producción sin sacrificar la calidad".
 
 ## ⚫ D.2. Análisis desde el Sombrero Negro (Riesgos y Cautela)
 Bajo este sombrero, el equipo se enfocó en los peligros, obstáculos y posibles fallas del sistema.
@@ -193,4 +193,4 @@ Bajo este sombrero, el equipo se enfocó en los peligros, obstáculos y posibles
 
 **Ingeniero de Procesos (Karen Pérez)**: "Identifico un riesgo de desgaste por fricción. El contacto constante metal-metal con las piezas de la M2 desgastará el calibrador. Si no hay un plan de endurecimiento del material, el Poka-Yoke fallará".
 
-**Supervisor de Turno (Anahi)**: "Existe el riesgo de resistencia al cambio. Si el operador siente que el calibrador 'lo detiene' para cumplir su cuota, podría intentar saltarse el paso o forzar la pieza, dañando tanto el producto como la herramienta".
+**Supervisor de Turno (Anahi Valdez)**: "Existe el riesgo de resistencia al cambio. Si el operador siente que el calibrador 'lo detiene' para cumplir su cuota, podría intentar saltarse el paso o forzar la pieza, dañando tanto el producto como la herramienta".
