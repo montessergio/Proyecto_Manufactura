@@ -1,196 +1,240 @@
-# 📊 Análisis de Manufactura: Control de Calidad y Eficiencia
+📊 Análisis de Manufactura: Control de Calidad y Eficiencia Operativa
+1. Descripción General
 
-Este proyecto realiza un análisis integral de los procesos de producción, centrándose en la identificación de fallas críticas y la optimización de tiempos.
+Este proyecto desarrolla un análisis integral de datos de producción enfocado en la identificación de defectos críticos, análisis de paros y propuesta de mejoras bajo metodologías Six Sigma (DMAIC) y Lean Manufacturing.
 
-## 🛠️ Herramientas Utilizadas
-* **Python (Pandas & Matplotlib):** Limpieza de datos y análisis estadístico inicial.
-* **Power BI:** Creación de un Dashboard interacto.
+El objetivo principal es detectar las principales fuentes de variabilidad en la línea de producción, priorizar acciones correctivas y establecer mecanismos de control estadístico para estabilizar el proceso.
 
+2. Herramientas Utilizadas
 
-## 📈 Contenido del Repositorio
-1.  **Analisis_Proyecto_Manufactura.ipynb:** Script con el procesamiento de datos.
-2.  **Proyecto_Manufactura_Graficos.pbix:** Reporte visual con indicadores de paros, defectos por máquina y tendencias.
-3.  **Carpeta /export_powerbi:** Bases de datos procesadas en formato CSV.
+Python (Pandas, Matplotlib):
 
-## 💡 Insights Clave
-* Se identificaron los defectos principales que afectan la línea de producción.
-* El análisis de tendencias permite prever picos de fallas en turnos específicos.
+Limpieza y estructuración del dataset.
 
-## 🟢 SECCIÓN A: Formación del Equipo TOPS (Equipos Orientados a la Solución de Problemas) 
+Cálculo de métricas de defectos.
 
+Análisis de Pareto.
 
-Nombre del Equipo: 🛠️ **Ingenieros chiquitos** 
+Análisis exploratorio de datos.
 
+Power BI:
 
-👥 Estructura del Equipo: Roles y Responsabilidades 
+Construcción de dashboard interactivo.
 
+Visualización de defectos por máquina.
 
-👔 Gerente de Producción (**Omar Campos**): Responsable de interpretar el impacto en el throughput y asegurar el cumplimiento de las metas de entrega. Su enfoque es priorizar las acciones de mejora que impacten la productividad.
+Tendencias por turno.
 
+Indicadores clave de desempeño (KPIs).
 
-📊 Analista de Calidad (**Sergio Montes / Mónica Godínez**): Encargados de calcular las métricas de defectos utilizando el dataset de producción. Su función principal es ejecutar el Análisis de Pareto e identificar el defecto principal.
-+2
+3. Contenido del Repositorio
 
+Analisis_Proyecto_Manufactura.ipynb
+Notebook con el procesamiento de datos, análisis estadístico y generación de gráficos iniciales.
 
-⚙️ Ingeniero de Procesos (**Karen Pérez**): Responsable del diseño de soluciones técnicas y mejoras de flujo de trabajo. Su tarea es proponer mecanismos de ingeniería aplicada como Poka-Yoke.
-+1
+Proyecto_Manufactura_Graficos.pbix
+Dashboard interactivo que incluye:
 
+Indicadores de defectos.
 
-📋 Supervisor de Turno (**Anahi Valdez**): Encargada de validar que las propuestas sean operativamente viables en el piso de producción. Documenta las condiciones reales de operación para asegurar el éxito de la implementación.
+Análisis de paros.
 
+Tendencias temporales.
 
-## 🤝 Justificación de Multidisciplinariedad 
+Identificación de máquina crítica.
 
-Para abordar la variabilidad en la planta "Manufactura Global S.A." , es vital integrar estas cuatro perspectivas:
-+1
+/export_powerbi
+Bases de datos procesadas en formato CSV listas para visualización.
 
-🚀 Producción: Optimiza la capacidad y el flujo para cumplir con los clientes.
+SECCIÓN A: Formación del Equipo TOPS
+(Equipos Orientados a la Solución de Problemas)
 
-🛡️ Calidad: Asegura la estabilidad estadística y que las soluciones eliminen la variabilidad.
+Nombre del Equipo: 🛠️ Ingenieros chiquitos
 
-🧪 Procesos: Traduce los datos en ingeniería aplicada y herramientas físicas concretas.
+Estructura del Equipo y Responsabilidades
 
-✅ Operación: Garantiza que la implementación sea realista para los operadores en todos los turnos.
+👔 Gerente de Producción (Omar Campos)
+Responsable de evaluar el impacto en el throughput y priorizar acciones con efecto directo en productividad y cumplimiento de entregas.
 
-## 📉 SECCIÓN B: Aplicación de Seis Sigma (Metodología DMAIC)
-En esta sección utilizamos el ciclo de mejora para atacar la variabilidad de la planta.
+📊 Analista de Calidad (Sergio Montes / Mónica Godínez)
+Encargados del procesamiento del dataset, cálculo de métricas de defectos y ejecución del Análisis de Pareto para identificar el defecto prioritario.
 
-1. 🎯 **Definir y Medir**
+⚙️ Ingeniero de Procesos (Karen Pérez)
+Responsable del diseño técnico de soluciones, estandarización de procesos y propuesta de mecanismos de ingeniería aplicada como Poka-Yoke.
 
-Métrica de Calidad Global: Calculamos el porcentaje total de unidades defectuosas de la planta (Suma de Defectos / Suma de Producción).
+📋 Supervisor de Turno (Anahi Valdez)
+Encargada de validar la factibilidad operativa en piso de producción y asegurar la correcta implementación de las mejoras.
 
+Justificación de la Multidisciplinariedad
 
-Análisis de Pareto: Mediante el procesamiento en Python, identificamos que el Tipo de Defecto Principal es "Dimensión fuera de especificación". Este problema representa la prioridad #1 para el equipo TOPS debido a su alto impacto en el desperdicio de material.
+La variabilidad en la planta requiere integrar distintas perspectivas:
 
-2. 🔍 **Analizar: Caso Máquina M2**
-Al filtrar los datos para la Máquina M2, observamos una recurrencia crítica del defecto de dimensiones. Para encontrar la causa raíz, aplicamos la técnica de los 5 Porqués:
-+1
+Producción: Impacto en capacidad y flujo.
 
-**¿Por qué las piezas de la M2 tienen dimensiones incorrectas?**
+Calidad: Estabilidad estadística y reducción de variabilidad.
 
-Respuesta: Porque el eje de corte pierde alineación durante la operación.
+Procesos: Traducción de datos en soluciones técnicas.
 
-**¿Por qué pierde alineación el eje?**
+Operación: Viabilidad práctica en turno.
 
-Respuesta: Porque el soporte del rodamiento presenta una vibración excesiva.
+SECCIÓN B: Aplicación de Six Sigma (DMAIC)
+1. Definir y Medir
+Métrica Global de Calidad
 
-**¿Por qué hay vibración excesiva?**
+Se calculó el porcentaje total de unidades defectuosas:
 
-Respuesta: Porque los tornillos de fijación se aflojan con el calor del turno.
+Tasa de defectos
+=
+Total de defectos
+Total de producci
+o
+ˊ
+n
+Tasa de defectos=
+Total de producci
+o
+ˊ
+n
+Total de defectos
+	​
 
-**¿Por qué se aflojan con el calor?**
+Análisis de Pareto
 
-Respuesta: Porque no se está utilizando el torque de apriete especificado ni sellador térmico.
+Mediante procesamiento en Python se identificó como defecto prioritario:
 
-**¿Por qué no se usa el torque correcto? (Causa Raíz)**
+“Dimensión fuera de especificación”
 
-Respuesta: Falta de un procedimiento estandarizado de ajuste y ausencia de herramientas de torque calibradas en la estación.
+Este defecto concentra la mayor proporción de desperdicio y fue definido como prioridad estratégica.
 
-## 3. ✨ Mejorar (Lluvia de Ideas por Roles)
-Tras una sesión de brainstorming multidisciplinaria, el equipo Ingenieros chiquitos propone las siguientes soluciones integrales para eliminar el defecto de "Dimensión fuera de especificación" en la Máquina M2:
+2. Analizar: Caso Máquina M2
 
-**👔 Desde la Gerencia de Producción (Omar Campos):**
+Al segmentar el análisis por máquina, se identificó que la Máquina M2 presenta la mayor incidencia del defecto dimensional.
 
+Análisis de Causa Raíz – Técnica 5 Porqués
 
-Priorización de Inversión: Autorizar la compra inmediata de los kits de herramientas para evitar que el costo por desperdicio (scrap) siga afectando el cumplimiento de entregas.
+Problema: Dimensiones fuera de especificación en M2.
 
+Secuencia lógica:
 
-Ajuste de KPIs: Integrar el cumplimiento de los nuevos estándares de torque en los indicadores de rendimiento del turno.
+Pérdida de alineación del eje de corte.
 
-**📊 Desde el Análisis de Calidad (Sergio Montes / Mónica Godinez):**
+Vibración excesiva en soporte del rodamiento.
 
+Aflojamiento de tornillos por efecto térmico.
 
-Validación de Materiales: Proponer y validar estadísticamente que el uso de arandelas de presión y sellador de roscas de alta temperatura reduzca la variabilidad de las dimensiones a largo plazo.
+Ausencia de torque especificado y sellador térmico.
 
+Falta de procedimiento estandarizado y herramientas calibradas.
 
-Muestreo Dirigido: Establecer un plan de inspección reforzado durante los primeros 15 días tras la implementación de las mejoras.
+Causa raíz identificada:
+Ausencia de estandarización técnica y control de torque.
 
-**⚙️ Desde la Ingeniería de Procesos (Karen Pérez):**
+3. Mejorar
+Acciones Propuestas por Rol
 
+👔 Producción
 
-Estandarización Técnica (SOP): Diseñar la Ayuda Visual (SOP) con los valores de torque exactos, utilizando un lenguaje técnico claro y diagramas de posición para el eje de la M2.
+Priorización de inversión en herramientas de torque.
 
+Integración del cumplimiento de estándares en KPIs de turno.
 
-Poka-Yoke de Herramientas: Implementar un Kit de Herramientas con llaves dinamométricas (torquímetros) pre-ajustadas al valor requerido, evitando que el operador use una fuerza incorrecta de forma manual.
+📊 Calidad
 
-**📋 Desde la Supervisión de Turno (Anahi Valdez):**
+Validación estadística del uso de arandelas de presión y sellador térmico.
 
+Plan de inspección reforzado post-implementación.
 
-Factibilidad Operativa: Asegurar que los torquímetros estén anclados o fijos en la estación para que el operador no pierda tiempo buscándolos (aplicación de orden y limpieza).
+⚙️ Procesos
 
+Diseño de SOP con valores de torque definidos.
 
-Capacitación en Piso: Entrenar a los operadores en el uso correcto de los nuevos materiales y la lectura de la ayuda visual para garantizar una implementación realista y sostenible.
+Implementación de torquímetros pre-ajustados.
 
-4. 🛠️ **Controlar**
-Para asegurar que la Máquina M2 se mantenga en los estándares, utilizaremos:
+📋 Supervisión
 
-**Gráfico de Control (SPC)**: Un tablero visual donde el operador registre las dimensiones críticas cada hora. Si los puntos salen de los límites, la máquina se detiene automáticamente para ajuste.
+Asegurar disponibilidad física de herramientas.
 
+Capacitación operativa en piso.
 
-## 🚀 SECCIÓN C: Herramientas Lean Manufacturing
-En esta sección, aplicamos pilares de Lean Manufacturing para eliminar desperdicios y robustecer el proceso productivo de la planta.
+4. Controlar
 
-C.1. Mantenimiento Productivo Total (**TPM**): Enfoque en Mantenimiento Autónomo 🛠️
-Ante los paros registrados por "Rotura de Herramienta", el equipo propone implementar el Pilar de Mantenimiento Autónomo:
+Se propone implementar:
 
+Gráficos de Control (SPC) para dimensiones críticas.
 
-**Inspección Diaria**: El operador realizará una limpieza y revisión visual de la herramienta al inicio de cada turno para detectar desgaste prematuro.
+Registro horario de mediciones.
 
+Acción correctiva inmediata ante puntos fuera de límites.
 
-**Lubricación Estandarizada**: Se establece un programa donde el operador aplica lubricante en puntos críticos para reducir la fricción que causa las roturas.
+SECCIÓN C: Aplicación de Lean Manufacturing
+C.1 Mantenimiento Productivo Total (TPM)
 
+Enfoque en Mantenimiento Autónomo:
 
-**Detección Temprana**: Capacitar al operador para identificar sonidos o vibraciones anormales antes de que ocurra la falla catastrófica.
+Inspección visual diaria.
 
-## C.2. Las 5S: Estrategia para reducir el "Error del Operador" 📋
-Para mitigar los errores humanos detectados en el reporte, implementaremos las 5S en las estaciones de trabajo:
+Lubricación estandarizada.
 
+Detección temprana de vibraciones anormales.
 
-**Seiri (Clasificar)**: Retirar cualquier herramienta que no pertenezca a la operación de la máquina M2.
+C.2 Implementación de 5S
 
+Clasificación de herramientas.
 
-**Seiton (Ordenar)**: Utilizar tableros de sombra (shadow boards) para que cada herramienta (como el torquímetro) tenga un lugar único y marcado.
+Orden mediante tableros sombra.
 
+Limpieza sistemática.
 
-**Seiso (Limpiar)**: Mantener el área libre de virutas o aceite que puedan provocar distracciones o errores de ajuste.
+Estandarización visual.
 
+Auditorías periódicas.
 
-**Seiketsu (Estandarizar)**: Colocar las Ayudas Visuales (SOP) diseñadas por el equipo en lugares visibles para consulta rápida.
+C.3 Poka-Yoke
 
+Diseño de calibrador Paso/No-Paso:
 
-**Shitsuke (Disciplina)**: Realizar auditorías semanales por parte de la Supervisora de Turno (Anahi) para mantener el estándar.
+Dispositivo físico fijo al final de la línea.
 
-## C.3. Poka-Yoke: Mecanismo a prueba de errores 🛡️
-Para evitar que salgan piezas con dimensiones incorrectas, proponemos un mecanismo físico de tipo "paso/no paso" (Go/No-Go gage):
+Bloqueo automático de piezas fuera de especificación.
 
+Eliminación de ambigüedad en medición manual.
 
-**Diseño**: Un dispositivo de medición fija al final de la línea de la M2.
+SECCIÓN D: Evaluación Crítica de la Solución
 
+Aplicación de técnica de análisis paralelo:
 
-**Funcionamiento**: La pieza debe pasar a través de una ranura calibrada con la dimensión exacta. Si la pieza está fuera de especificación, no encajará en el dispositivo, bloqueando físicamente su avance a la siguiente etapa de empaque.
+Beneficios esperados
 
+Reducción de scrap.
 
-## 🎓 SECCIÓN D: Herramientas Creativas (Seis Sombreros para Pensar)
-Para validar la solución propuesta (Poka-Yoke: Calibrador Paso/No-Paso), el equipo Ingenieros chiquitos aplicó la técnica de pensamiento paralelo. Todo el equipo analizó la misma solución bajo dos perspectivas críticas: los beneficios (Sombrero Amarillo) y los riesgos (Sombrero Negro).
+Estabilidad estadística.
 
-🟡 **D.1. Análisis desde el Sombrero Amarillo (Beneficios y Valor)**
-Bajo este sombrero, el equipo exploró por qué la implementación será un éxito y qué valor aporta a la planta.
+Simplicidad operativa.
 
-**Gerente de Producción (Omar Campos)**: "Desde mi perspectiva, el beneficio principal es la recuperación del throughput. Al filtrar las piezas malas en la M2, evitamos que lleguen a empaque, eliminando el costo de re-trabajo y multas por retrasos".
+Disminución de retrabajo.
 
-**Analista de Calidad (Sergio Montes / Mónica)**: "Este sistema nos da una certeza del 100% en la segregación de producto conforme. Los datos de nuestros gráficos de control mostrarán una estabilidad que antes no teníamos".
+Riesgos identificados
 
-**Ingeniero de Procesos (Karen Pérez)**: "El mayor beneficio técnico es la simplicidad. Al ser un dispositivo físico, no depende de la interpretación del operador; la pieza entra o no entra, eliminando la ambigüedad en la medición".
+Pérdida de calibración del dispositivo.
 
-**Supervisor de Turno (Anahi Valdez)**: "Para el personal operativo, esto reduce el estrés y la fatiga visual. Es una herramienta rápida que permite mantener el ritmo de producción sin sacrificar la calidad".
+Desgaste por fricción.
 
-## ⚫ D.2. Análisis desde el Sombrero Negro (Riesgos y Cautela)
-Bajo este sombrero, el equipo se enfocó en los peligros, obstáculos y posibles fallas del sistema.
+Resistencia al cambio.
 
-**Gerente de Producción (Omar Campos)**: "Mi preocupación es el costo de fabricación de estos calibradores para todas las estaciones. Debemos asegurar que el retorno de inversión por ahorro de scrap sea visible en el primer mes".
+Retorno de inversión inicial.
 
-**Analista de Calidad (Sergio Montes / Mónica)**: "El riesgo crítico es la pérdida de calibración. Si el dispositivo se cae o se golpea, su dimensión interna podría cambiar, y estaríamos validando piezas erróneas sin saberlo".
+Conclusión
 
-**Ingeniero de Procesos (Karen Pérez)**: "Identifico un riesgo de desgaste por fricción. El contacto constante metal-metal con las piezas de la M2 desgastará el calibrador. Si no hay un plan de endurecimiento del material, el Poka-Yoke fallará".
+El análisis permitió:
 
-**Supervisor de Turno (Anahi Valdez)**: "Existe el riesgo de resistencia al cambio. Si el operador siente que el calibrador 'lo detiene' para cumplir su cuota, podría intentar saltarse el paso o forzar la pieza, dañando tanto el producto como la herramienta".
+Identificar la máquina crítica.
+
+Priorizar defecto principal.
+
+Determinar causa raíz técnica.
+
+Diseñar soluciones integradas bajo enfoque DMAIC y Lean.
+
+Proponer mecanismos de control estadístico sostenibles.
+
+Este proyecto demuestra la integración de análisis de datos, mejora de procesos y diseño de soluciones técnicas aplicadas a entornos de manufactura.
