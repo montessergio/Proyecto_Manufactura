@@ -1,6 +1,6 @@
-📊 Análisis de Manufactura: Control de Calidad y Eficiencia Operativa
+m📊 Análisis de Manufactura: Control de Calidad y Eficiencia Operativa
 1. Descripción General
-
+m
 Este proyecto desarrolla un análisis integral de datos de producción enfocado en la identificación de defectos críticos, análisis de paros y propuesta de mejoras bajo metodologías Six Sigma (DMAIC) y Lean Manufacturing.
 
 El objetivo principal es detectar las principales fuentes de variabilidad en la línea de producción, priorizar acciones correctivas y establecer mecanismos de control estadístico para estabilizar el proceso.
@@ -108,96 +108,47 @@ Este defecto concentra la mayor proporción de desperdicio y fue definido como p
 
 2. Analizar: Caso Máquina M2
 
-Al segmentar el análisis por máquina, se identificó que la Máquina M2 presenta la mayor incidencia del defecto dimensional.
+Filtrando los datos de la Máquina M2 y aplicando la técnica de los **5 Porqués**:
 
-Análisis de Causa Raíz – Técnica 5 Porqués
+1 ¿Por qué hay dimensiones fuera de especificación? Pérdida de alineación del eje de corte.
+2 ¿Por qué se pierde la alineación? Vibración excesiva en el soporte del rodamiento.
+3 ¿Por qué hay vibración excesiva? Aflojamiento de tornillos por efecto térmico.
+4 ¿Por qué se aflojan los tornillos? Ausencia de torque especificado y sellador térmico.
+5 ¿Por qué no se usa torque y sellador? Falta de procedimiento estandarizado y herramientas calibradas.
 
-Problema: Dimensiones fuera de especificación en M2.
+Causa raíz: Ausencia de estandarización técnica y control de torque en el montaje.
 
-Secuencia lógica:
+3. Propuestas de Mejora (Fase Mejorar)
+El equipo generó cuatro propuestas creativas integradas:
 
-Pérdida de alineación del eje de corte.
+Propuesta del Gerente de Producción (Omar)
+-Mantenimiento Predictivo (PdM) Instalación de sensores de vibración y termografía en el husillo de M2.
+-Rediseño del Preventivo: Cambio de limpiezas basadas en tiempo a limpiezas basadas en unidades producidas.
+- Stock Crítico: Kit de "Respuesta Rápida M2" en almacén.
+- Alertas de Capacidad: Si Cpk < 1.33, notificación inmediata para evaluar paro técnico.
 
-Vibración excesiva en soporte del rodamiento.
+Propuesta de la Ingeniera de Procesos (Karen)
+- Poka-Yoke Digital: Guías físicas y sensores de proximidad que impiden el ciclo si la pieza no está correctamente orientada.
+- Andon Dinámico 4.0: Torre de luz inteligente vinculada al script de Python (azul: preventivo próximo, naranja: tendencia a variabilidad, verde: estable).
+- Kits de Set-Up "Pre-Stage": Carros de cambio rápido preconfigurados.
+- Matriz de Auto-Calidad: Inspección visual cada 50 unidades con plantilla de alta resolución.
+- Análisis Gemba-Digital: Cámaras de alta velocidad para detectar microparos.
 
-Aflojamiento de tornillos por efecto térmico.
+Propuesta del Analista de Calidad (Sergio/Mónica)
+- Gemelo Digital de Calidad: Dashboard en Power BI con un Índice de Salud de Proceso (ISP) que combina vibración, temperatura, Cpk y desgaste de herramienta.
+- Bucles de Control Automatizados: Script Python que aprende "perfiles de éxito" de materia prima y ajusta alertas.
+- FitBit del Operador-Mantenedor: Tablero de contribución individual que muestra el impacto de las acciones del operador en la calidad.
 
-Ausencia de torque especificado y sellador térmico.
+Propuesta de la Supervisora de Turno (Anahí)
+-Entrenamiento Inmersivo "Siente la Máquina": Píldoras de conocimiento de 5 minutos al inicio de cada turno (sonidos, tacto, simulacros).
+- Tablero de Guerra M2: Mapa de calor de riesgos, checklist con código de colores, fotos de "antes y después".
+- Rituales de Control "La Hora Mágica": Cada hora, 3 minutos para verificar 5 piezas, registrar tendencia y limpiar un punto crítico.
+- Reconocimiento y Consecuencias: Ranking de efectividad por turno y trofeo viajero para fomentar sana competencia.
 
-Falta de procedimiento estandarizado y herramientas calibradas.
-
-Causa raíz identificada:
-Ausencia de estandarización técnica y control de torque.
-
-3. Mejorar
-Acciones Propuestas por Rol
-
-👔 Producción
-
-Priorización de inversión en herramientas de torque.
-
-Integración del cumplimiento de estándares en KPIs de turno.
-
-📊 Calidad
-
-Validación estadística del uso de arandelas de presión y sellador térmico.
-
-Plan de inspección reforzado post-implementación.
-
-⚙️ Procesos
-
-Diseño de SOP con valores de torque definidos.
-
-Implementación de torquímetros pre-ajustados.
-
-📋 Supervisión
-
-Asegurar disponibilidad física de herramientas.
-
-Capacitación operativa en piso.
-
-4. Controlar
-
-Se propone implementar:
-
-Gráficos de Control (SPC) para dimensiones críticas.
-
-Registro horario de mediciones.
-
-Acción correctiva inmediata ante puntos fuera de límites.
-
-SECCIÓN C: Aplicación de Lean Manufacturing
-C.1 Mantenimiento Productivo Total (TPM)
-
-Enfoque en Mantenimiento Autónomo:
-
-Inspección visual diaria.
-
-Lubricación estandarizada.
-
-Detección temprana de vibraciones anormales.
-
-C.2 Implementación de 5S
-
-Clasificación de herramientas.
-
-Orden mediante tableros sombra.
-
-Limpieza sistemática.
-
-Estandarización visual.
-
-Auditorías periódicas.
-
-C.3 Poka-Yoke
-
-Diseño de calibrador Paso/No-Paso:
-
-Dispositivo físico fijo al final de la línea.
-
-Bloqueo automático de piezas fuera de especificación.
-
-Eliminación de ambigüedad en medición manual.
+4. Herramientas Lean Aplicadas
+- TPM: Mantenimiento autónomo (operadores inspeccionan y limpian diariamente) ante paros por "Rotura de Herramienta".
+- 5S: Estrategia de clasificación, orden y limpieza en el área de máquinas para reducir "Error del Operador".
+- Poka-Yoke: Mecanismo físico (guias y sensores) para evitar piezas con dimensiones incorrectas.
 
 SECCIÓN D: Evaluación Crítica de la Solución
 
