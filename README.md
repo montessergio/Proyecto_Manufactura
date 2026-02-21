@@ -1,9 +1,9 @@
-m📊 Análisis de Manufactura: Control de Calidad y Eficiencia Operativa
+📊 Análisis de Manufactura: Control de Calidad y Eficiencia Operativa
 1. Descripción General
-m
+
 Este proyecto desarrolla un análisis integral de datos de producción enfocado en la identificación de defectos críticos, análisis de paros y propuesta de mejoras bajo metodologías Six Sigma (DMAIC) y Lean Manufacturing.
 
-El objetivo principal es detectar las principales fuentes de variabilidad en la línea de producción, priorizar acciones correctivas y establecer mecanismos de control estadístico para estabilizar el proceso.
+El objetivo principal es detectar las principales fuentes de variabilidad en la línea de producción, priorizar acciones correctivas y establecer mecanismos de control estadístico para estabilizar el proceso.m
 
 2. Herramientas Utilizadas
 
