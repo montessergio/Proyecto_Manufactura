@@ -4,7 +4,7 @@
 
 Este proyecto desarrolla un análisis integral de datos de producción enfocado en la identificación de defectos críticos, análisis de paros y propuesta de mejoras bajo metodologías Six Sigma (DMAIC) y Lean Manufacturing.
 
-El objetivo principal es detectar las principales fuentes de variabilidad en la línea de producción, priorizar acciones correctivas y establecer mecanismos de control estadístico para estabilizar el proceso.m
+El objetivo principal es detectar las principales fuentes de variabilidad en la línea de producción, priorizar acciones correctivas y establecer mecanismos de control estadístico para estabilizar el proceso.
 
 **2. Herramientas Utilizadas**
 
@@ -50,7 +50,7 @@ Bases de datos procesadas en formato CSV listas para visualización.
 **SECCIÓN A: Formación del Equipo TOPS**
 (Equipos Orientados a la Solución de Problemas)
 
-Nombre del Equipo: 🛠️ Ingenieros chiquitos
+**Nombre del Equipo: 🛠️ Ingenieros chiquitos**
 
 Estructura del Equipo y Responsabilidades
 
@@ -87,6 +87,11 @@ Métrica Global de Calidad
 Se calculó el porcentaje total de unidades defectuosas:
 
 Tasa de defectos=Total de defecto/Total de producción
+Total de unidades producidas: 77,000
+
+Total de unidades defectuosas: 3,304
+
+Porcentaje de defectos: (3,304 / 77,000) × 100 = **4.29%** (aproximadamente)
 
 Análisis de Pareto
 
