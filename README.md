@@ -454,4 +454,5 @@ Declaración final del equipo:
 "El Gemelo Digital de Calidad es nuestra apuesta estratégica para llevar a M2 de ser nuestra máquina problema a convertirse en un faro de excelencia. Los riesgos existen, pero los hemos identificado y tenemos un plan para mitigarlos. Con el compromiso de todos los roles (Gerencia, Calidad, Procesos y Supervisión), esta solución no solo mejorará indicadores, sino que transformará nuestra cultura hacia una manufactura verdaderamente inteligente."
 
 Esta herramienta creativa nos permitió validar nuestra propuesta desde ángulos opuestos, fortaleciéndola y preparándonos para una implementación exitosa.
-<img width="1377" height="779" alt="image" src="https://github.com/user-attachments/assets/36bb89f6-0281-458f-bfa1-595c79911df3" />
+<img width="1437" height="801" alt="image" src="https://github.com/user-attachments/assets/83b63dba-ec92-46c1-8dc3-6fc4025fb8cc" />
+
