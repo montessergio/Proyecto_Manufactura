@@ -310,33 +310,7 @@ Si la pieza está fuera de especificaciones → un actuador neumático la desví
 Conexión con el Gemelo Digital:
 Las mediciones se envían en tiempo real al dashboard de Power BI (Sergio), alimentando el cálculo del Cpk y activando alertas tempranas (Andon naranja) si la tendencia se desvía.
 
-[ ENTRADA DE PIEZA ]
-                |
-                v
-    +--------------------------+
-    |   GUÍA FÍSICA POKA-YOKE  |----( NO CALZA )----> [ PARO DE CICLO ]
-    |    (Capa 1: Mecánica)    |                         (Alarma)
-    +--------------------------+
-                |
-             ( CALZA )
-                |
-                v
-    +--------------------------+
-    |       MECANIZADO M2      |
-    |    (Proceso Principal)   |
-    +--------------------------+
-                |
-                v
-    +--------------------------+
-    |  MEDICIÓN LÁSER DIGITAL  |----( SI NOK )------> [ DESVÍO A RECHAZO ]
-    |     (Capa 2: Lógica)     |                      (Registro en Log)
-    +--------------------------+
-                |
-             ( SI OK )
-                |
-                v
-       [ CONTINÚA FLUJO ]
-       (Siguiente Operación)
+<img width="306" height="456" alt="image" src="https://github.com/user-attachments/assets/982a5c51-7e51-4b29-bc77-d14fda9a0a2f" />
 
 Beneficio esperado:
 
