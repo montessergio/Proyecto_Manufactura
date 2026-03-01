@@ -50,17 +50,17 @@ Bases de datos procesadas en formato CSV listas para visualización.
 **SECCIÓN A: Formación del Equipo TOPS**
 (Equipos Orientados a la Solución de Problemas)
 
-**Nombre del Equipo: 🛠️ Ingenieros chiquitos**
+**Nombre del Equipo: 🛠️ OEG ( Operational Excellence Group)**
 
 Estructura del Equipo y Responsabilidades
 
 👔 Gerente de Producción (Omar Campos)
 Responsable de evaluar el impacto en el throughput y priorizar acciones con efecto directo en productividad y cumplimiento de entregas.
 
-📊 Analista de Calidad (Sergio Montes / Mónica Godínez)
+📊 Ingeniero de Calidad (Sergio Montes )
 Encargados del procesamiento del dataset, cálculo de métricas de defectos y ejecución del Análisis de Pareto para identificar el defecto prioritario.
 
-⚙️ Ingeniero de Procesos (Karen Pérez)
+⚙️ Ingeniero de Procesos (Karen Pérez / Mónica Godínez)
 Responsable del diseño técnico de soluciones, estandarización de procesos y propuesta de mecanismos de ingeniería aplicada como Poka-Yoke.
 
 📋 Supervisor de Turno (Anahi Valdez)
@@ -151,13 +151,11 @@ Pregunta: ¿Qué métrica o tablero visual utilizarían para asegurar que la Má
 Nuestra Propuesta: Sistema Integrado de Control Visual "Ojo de Águila M2"
 Para garantizar que la Máquina M2 se mantenga consistentemente dentro de los estándares de calidad y operación, implementaremos un sistema de control de doble capa: digital (estratégico) y físico (táctico-operativo) . Este sistema permitirá que tanto la gerencia como los operadores en piso tengan visibilidad en tiempo real del desempeño de la máquina, integrando las propuestas de todo el equipo TOPS.
 
-1. Tablero Digital Estratégico (Power BI) – Responsabilidad del Analista de Calidad
-Métrica	Fórmula / Definición	Objetivo	Frecuencia	Visualización
-Índice de Salud de Proceso (ISP)	Combinación ponderada: Vibración (30%) + Temperatura (20%) + Cpk (30%) + Desgaste de herramienta (20%)	≥ 85%	Tiempo real	Semáforo grande con tendencia
-Cpk (Índice de Capacidad de Proceso)	Mínimo [(LSE - Media)/3σ, (Media - LIE)/3σ]	≥ 1.33	Cada lote	Gráfico de control con meta
-PPM (Partes por Millón) Defectuosas	(Unidades defectuosas / Unidades producidas) × 1,000,000	< 500 ppm	Diario	Tarjeta numérica grande
-MTBF (Tiempo Medio Entre Fallas)	Tiempo total operativo / Número de paradas	En aumento	Semanal	Gráfico de tendencia
-Porcentaje de Cumplimiento 5S	Auditoría diaria (0–100%)	≥ 95%	Diario	Calificación visual
+📈 Monitoreo de Excelencia Operativa (Digital)
+Responsabilidad: Ingeniería de Calidad (Sergio Montes)
+
+ <img width="858" height="491" alt="image" src="https://github.com/user-attachments/assets/0aedf1d3-c56b-4473-b1bf-10ac34bb3782" />
+
 🎯 Mecanismo de Alerta:
 
 Verde: Todo OK (ISP > 85%, Cpk > 1.33)
@@ -168,46 +166,25 @@ Rojo: Acción inmediata (ISP < 70% o Cpk < 1.0) → Alerta a gerencia, calidad y
 
 Conexión con los roles:
 
-Sergio (Analista): Alimenta el dashboard con datos del script Python y valida la precisión de las alertas.
+Sergio (Ingeniero de Calidad): Alimenta el dashboard con datos del script Python y valida la precisión de las alertas.
 
 Omar (Gerente): Recibe notificaciones en tiempo real y puede tomar decisiones estratégicas (como parar la línea si el ISP cae).
 
 2. Tablero Físico Táctico "La Fortaleza Humana" – Responsabilidad del Supervisor
 Ubicado junto a la Máquina M2, visible para todos los operadores y supervisores:
 
-Elemento del Tablero	Descripción	Responsable de actualización
-Semáforo de Turno	Indicador magnético del estado actual (Verde/Amarillo/Rojo)	Operador cada hora
-Gráfico de Tendencia de Dimensiones	Registro manual de 5 mediciones por hora (con puntos conectados)	Operador después de "La Hora Mágica"
-Checklist 5S con Fotos	Antes/Después del área y lista de verificación completada	Operador al inicio y fin del turno
-Tarjeta Roja de Paro	Formato físico para reportar condiciones anormales	Cualquier operador
-Ranking de Efectividad por Turno	Competencia semanal con métrica: (Unidades buenas - Tiempo de paro por error)	Supervisor (Anahí) actualiza cada tarde
-Plan de Mantenimiento Autónomo	Calendario visible de tareas diarias/semanales	Operador marca al completar
-Ejemplo visual del tablero físico:
+<img width="852" height="472" alt="image" src="https://github.com/user-attachments/assets/2caac28f-cd1a-40ad-8536-65b68bb3453c" />
 
-text
-+--------------------------------------------------+
-|         🟢 TABLERO DE CONTROL M2 - TURNO A       |
-+--------------------------------------------------+
-| ESTADO ACTUAL:  🟢 ESTABLE  |  Cpk hoy: 1.42    |
-|--------------------------------------------------|
-| HORA | MEDICIÓN | TEMP | VIBRACIÓN | FIRMA OP.  |
-| 06:00|    OK    | 42°C |  0.2 mm/s |   JH      |
-| 07:00|    OK    | 43°C |  0.3 mm/s |   JH      |
-| 08:00|    ⚠️     | 47°C |  0.6 mm/s |   JH → Av |
-|--------------------------------------------------|
-| TOP 5 PAROS DEL MES:                             |
-| 1. Ajuste de herramienta (15 paros)              |
-| 2. Limpieza de filtros (8 paros)                 |
-|--------------------------------------------------|
-| RANKING DE TURNOS:   🥇 Turno A (98%)            |
-|                       🥈 Turno B (92%)            |
-|                       🥉 Turno C (87%)            |
-+--------------------------------------------------+
+🖥️ Prototipo de Interfaz de Control Visual (ASCII Art)
+Este esquema representa la organización de la información en el punto de trabajo para la Máquina M2:
+
+<img width="867" height="537" alt="image" src="https://github.com/user-attachments/assets/c2e2baf0-e29d-4deb-af8a-15f293c5a0fd" />
+
 Conexión con los roles:
 
 Anahí (Supervisora): Lidera la implementación, entrena a los operadores y verifica el cumplimiento.
 
-Karen (Ingeniera de Procesos): Diseña los formatos visuales y asegura que los Poka-Yoke se reflejen en el tablero.
+Karen / Monica (Ingeniera de Procesos): Diseña los formatos visuales y asegura que los Poka-Yoke se reflejen en el tablero.
 
 3. Reuniones de Revisión para Sostener el Control
 Reunión	Participantes	Duración	Objetivo	Frecuencia
@@ -301,16 +278,8 @@ Acciones concretas en el área M2: Realizar auditorías sorpresa semanales usand
 Responsable: Anahí + Sergio
 Evidencia / Herramienta: Auditoría 5S (puntaje 0-100) visible en el tablero físico.
 
-Ejemplo de Shadow Board propuesto:
+<img width="852" height="376" alt="image" src="https://github.com/user-attachments/assets/b831688e-7428-4788-8200-9a80fd527d7f" />
 
-+---------------------------------------------------+
-| HERRAMENTAL M2 - PUESTO 1 |
-+---------------------------------------------------+
-| [IMG] Llave 10mm | [IMG] Llave 12mm | [ Vacío ] |
-| [IMG] Calibrador | [IMG] Torquímetro| [ Vacío ] |
-| [IMG] Insertos RM | [IMG] Insertos FN| [ Vacío ] |
-+---------------------------------------------------+
-(IMAGEN: silueta de cada herramienta; si falta, se ve el vacío)
 
 Beneficio esperado:
 Reducir el tiempo de búsqueda de herramientas (desperdicio de movimiento), minimizar ajustes incorrectos y crear un entorno que "obligue" al orden, disminuyendo los errores atribuibles al factor humano.
@@ -341,13 +310,33 @@ Si la pieza está fuera de especificaciones → un actuador neumático la desví
 Conexión con el Gemelo Digital:
 Las mediciones se envían en tiempo real al dashboard de Power BI (Sergio), alimentando el cálculo del Cpk y activando alertas tempranas (Andon naranja) si la tendencia se desvía.
 
-Diagrama conceptual del Poka-Yoke integrado:
-
-[Entrada de pieza] → [Guía física Poka-Yoke] → [Mecanizado M2] → [Medición láser automática]
-| |
-(Si no calza) (Si OK) → Sigue flujo
-↓ ↓
-[Paro de ciclo] [Si NOK] → [Desvío a rechazo + Alarma]
+[ ENTRADA DE PIEZA ]
+                |
+                v
+    +--------------------------+
+    |   GUÍA FÍSICA POKA-YOKE  |----( NO CALZA )----> [ PARO DE CICLO ]
+    |    (Capa 1: Mecánica)    |                         (Alarma)
+    +--------------------------+
+                |
+             ( CALZA )
+                |
+                v
+    +--------------------------+
+    |       MECANIZADO M2      |
+    |    (Proceso Principal)   |
+    +--------------------------+
+                |
+                v
+    +--------------------------+
+    |  MEDICIÓN LÁSER DIGITAL  |----( SI NOK )------> [ DESVÍO A RECHAZO ]
+    |     (Capa 2: Lógica)     |                      (Registro en Log)
+    +--------------------------+
+                |
+             ( SI OK )
+                |
+                v
+       [ CONTINÚA FLUJO ]
+       (Siguiente Operación)
 
 Beneficio esperado:
 
@@ -361,7 +350,7 @@ Conexión con los roles:
 
 Karen (Ingeniera de Procesos): Diseña e implementa el dispositivo físico y la lógica de control.
 
-Sergio (Analista de Calidad): Configura las alertas en Power BI basadas en los datos del Poka-Yoke.
+Sergio (Ingeniero de Calidad): Configura las alertas en Power BI basadas en los datos del Poka-Yoke.
 
 Omar (Gerente): Aprueba la inversión en sensores y validación del sistema.
 
